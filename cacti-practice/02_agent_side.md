@@ -15,6 +15,8 @@
  snmp-agent usm-user v3 unisko complex-building  authentication-mode md5 3!'R''J4+<E8<ADA=H%:6A!! privacy-mode des56 KACKR)O2_La2BR9%VO$UD1!!
 ```
 
+思科交换机上的SNMP v3配置，则更为简单，没有privacy需要配置。
+
 注意这里使用的是带认证和加密的snmp v3 privacy模式，其中认证方式为`md5`，加密方式为`des`。可通过以下`net-snmp`命令, 在终端进行测试：
 
 ```
