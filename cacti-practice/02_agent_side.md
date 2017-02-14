@@ -10,7 +10,6 @@
  snmp-agent local-engineid 000007DB7F0000010000496A
  snmp-agent sys-info contact Peng, 18626256113
  snmp-agent sys-info location Complex Building, 1st floor
- snmp-agent group v3 complex-building
  snmp-agent group v3 complex-building privacy
  snmp-agent usm-user v3 unisko complex-building  authentication-mode md5 3!'R''J4+<E8<ADA=H%:6A!! privacy-mode des56 KACKR)O2_La2BR9%VO$UD1!!
 ```
