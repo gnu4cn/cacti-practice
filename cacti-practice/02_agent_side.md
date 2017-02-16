@@ -18,6 +18,8 @@
 
 注意这里使用的是带认证和加密的snmp v3 privacy模式，其中认证方式为`md5`，加密方式为`des`。可通过以下`net-snmp`命令, 在终端进行测试：
 
+此外，需要保持管理站与对象交换机（agent）IP地址的联通性（通常要将对象交换机的上行trunk接口设置为允许所有vlan通过`port trunk allow-pass vlan all`）。
+
 ```
 snmpwalk 192.168.101.2 -v 3 -a MD5 -l authPriv -X privPassword -x DES -u unisko -A authPassword
 ```
