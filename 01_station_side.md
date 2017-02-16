@@ -4,7 +4,7 @@ Cacti是一套使用PHP开发、B/S的SNMP实现，其需要PHP、MySQL、Nginx/
 
 注意以下两点：
 
-1. PHP的`session.auto_start`要设置为`1`，同时`cgi.fix_pathinfo`也要设置为`1`。
+1. `php.ini`(`/etc/php/7.0/fpm/php.ini`)的`session.auto_start`、`cgi.fix_pathinfo`也要设置为`1`。
 2. 对`cacti`的上级目录，应执行`sudo chown -R www-data:www-data ../`，因为nginx是以用户`www-data`运行的。
 
 此外，还需使用以下命令：
